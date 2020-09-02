@@ -27,8 +27,8 @@ function Header () {
           </a>
         </div>
         <ul class='navbar_mypage'>
-         <li><NavLink to='/login'>LOGIN/JOIN</NavLink></li>
-         <li> <NavLink to='/mypage'><FontAwesome name='user' size='2x' /></NavLink></li>
+          <li><NavLink to='/login'>LOGIN/JOIN</NavLink></li>
+          <li><NavLink to='/mypage'><FontAwesome name='user' size='2x' /></NavLink></li>
         </ul>
       </nav>
       <Switch>

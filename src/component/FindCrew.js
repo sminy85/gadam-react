@@ -14,6 +14,7 @@ import {
   faPlus,
   faBowlingBall
 } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
 
 library.add(
   faBasketballBall,
@@ -30,8 +31,14 @@ library.add(
 
 function FindCrew () {
   return (
-    <div class='center_body3'>
-      <NewComponent2 />
+    <div>
+      <div class='main_control_btn'>
+        <NavLink className='main_control' exact to='/'>HOME</NavLink>
+        <NavLink className='main_control2' to='/findcrew'>FIND CREW</NavLink>
+      </div>
+      <div class='center_body3'>
+        <NewComponent2 />
+      </div>
     </div>
   )
 }
@@ -56,7 +63,7 @@ function NewComponent2 () {
             </td>
             <td>
               <a href='/'>
-                <FontAwesomeIcon  icon={['fa', 'hiking']} size='2x' />
+                <FontAwesomeIcon icon={['fa', 'hiking']} size='2x' />
                 <i className="sportsname">등산</i>
               </a>
             </td>

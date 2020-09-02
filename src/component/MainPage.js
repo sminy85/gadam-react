@@ -1,19 +1,23 @@
 import React, { useState } from 'react'
 import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
+
 import Modal from './Modal'
+import { NavLink, Switch, Route, useParams } from 'react-router-dom'
+
 
 function MainPage () {
   return (
-    <div> 
-   
     <div class='mainpage'>
+      <div class='main_control_btn'>
+        <NavLink className='main_control1'  exact to='/'>HOME</NavLink>
+        <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>-</div>
       <div class='main'>
         <div class='center_body2'>
           <NewComponent />
         </div>
       </div>
-    </div></div>
+    </div>
   )
 }
 
@@ -51,12 +55,12 @@ function NewComponent () {
             <span>오늘의 크루</span>
             <span className="filter_btn" id="filter_btn">
               <button
-                class="toggle-button"
-                id="centered-toggle-button"
+                class='toggle-button'
+                id='centered-toggle-button'
                 onClick={function (e) {
                   e.preventDefault()
                   setShow(!show)
-                }} >
+                }}>
                 <FontAwesome name='filter' size='2x' />
               </button>
             </span>
@@ -104,8 +108,8 @@ function NewComponent () {
 
                   </ul>
                 </div>
-                <input type="button" id="cancel" Value="취소" />
-                <input type="submit" id="submit" Value="적용하기" />
+                <input type="button" id="cancel" defaultValue="취소" />
+                <input type="submit" id="submit" defaultValue="적용하기" />
                 <div class="actions">
                   <button class="toggle-button">OK</button>
                 </div>
@@ -182,7 +186,7 @@ function NewComponent () {
                     <li>#서울</li>
                   </span>
                 </div>
-                <a href='/' className="joinbtn">참여하기</a>
+               <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 11:00 </li>
@@ -194,7 +198,7 @@ function NewComponent () {
                     <li>#서울</li>
                   </span>
                 </div>
-                <a className="joinbtn" href='/'>참여하기</a> 
+                <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 15:00 </li>
@@ -206,7 +210,7 @@ function NewComponent () {
                     <li>#서울</li>
                   </span>
                 </div>
-                <a className="joindonebtn" href='/'>모집마감</a>
+                <NavLink className='joindonebtn' to='/detailinfo'>모집마감</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 17:00 </li>
@@ -218,7 +222,8 @@ function NewComponent () {
                     <li>#대전</li>
                   </span>
                 </div>
-                <a className="joinfastbtn" href='/'>마감임박</a>
+                {/* <a className="joinfastbtn" href='/'>마감임박</a> */}
+               <NavLink className='joinfastbtn' to='/detailinfo'>마감임박</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 18:00 </li>
@@ -230,7 +235,7 @@ function NewComponent () {
                     <li>#대전</li>
                   </span>
                 </div>
-                <a className="joinbtn" href='/'>참여하기</a>
+                <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 19:00 </li>
@@ -242,7 +247,7 @@ function NewComponent () {
                     <li>#부산</li>
                   </span>
                 </div>
-                <a className="joinbtn" href='/'>참여하기</a>
+                <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 20:00 </li>
@@ -254,7 +259,7 @@ function NewComponent () {
                     <li>#부천</li>
                   </span>
                 </div>
-                <a className="joindonebtn" href='/'>모집마감</a>
+               <NavLink className='joindonebtn' to='/detailinfo'>모집마감</NavLink>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 22:00 </li>
@@ -266,16 +271,16 @@ function NewComponent () {
                     <li>#인천</li>
                   </span>
                 </div>
-                <a className="joinfastbtn" href='/'>마감임박</a>
+                <NavLink className='joinfastbtn' to='/detailinfo'>마감임박</NavLink>
               </div>
             </ul>
           </div>
         </div>
         <div className="stickybutton" style={{zIndex: 2}}>
-          <a href='/'>
+          <NavLink to='/makecrew'>
             <p><b>크루모집</b></p>
             <span className="mainjoin" href='/'>나만의 크루를 모집해보세요!</span>
-          </a>
+          </NavLink>
         </div>
         <div className="main-paging">
           <div className="todayscrew-paging">
@@ -292,7 +297,5 @@ function NewComponent () {
     </div>
   )
 }
-
-
 
 export default MainPage

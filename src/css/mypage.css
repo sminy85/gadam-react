@@ -58,9 +58,10 @@
     padding-top:0px;
     border-radius:10px;
     margin:10px;
-    width: 220px;
+    width: 270px;
     height: 150px;
     flex-direction: column;
+    flex-wrap:nowrap;
     display: flex;
     align-items: stretch;
     box-sizing: border-box;
@@ -75,7 +76,8 @@
      color:rgb(71, 71, 71);
   }
   .subtitle{
-    margin-bottom:10px;
+    margin-bottom:15px;
+    text-align: left;
   }
   #crewtitle{
     font-size:18px;
@@ -84,13 +86,13 @@
   }
   #date-time{
     font-size:12px;
-    margin-bottom:2px;
+    margin-bottom:0px;
    margin-top:8px;
   }
   #place{
     font-size:12px;
-    margin-top:2px; 
-    margin-bottom:6px;
+    margin-top:0px; 
+    margin-bottom:0px;
   }
   
   #deletebtn,#reviewbtn,#setting,#detaillbtn{

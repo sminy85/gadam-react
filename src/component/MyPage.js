@@ -54,12 +54,12 @@ function NewComponent4 () {
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a href='/' id="deletebtn" style={{flexGrow: 3}}>일정 취소</a>
           </div>
-          <div className="boxx">
+          {/* <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>안양천 러닝</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="deletebtn" style={{flexGrow: 3}} href='/'>일정 취소</a>
-          </div>
+          </div> */}
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
@@ -138,12 +138,12 @@ function NewComponent4 () {
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="reviewbtn" style={{flexGrow: 3}} href='/'>후기 작성하기</a>
           </div>
-          <div className="boxx">
+          {/* <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="reviewbtn" style={{flexGrow: 3}} href='/'>후기 작성하기</a>
-          </div>
+          </div> */}
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>관악산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
@@ -200,12 +200,12 @@ function NewComponent4 () {
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="setting" style={{flexGrow: 3}} href="crewsetting.html">관리</a>
         </div>
-        <div className="boxx">
+        {/* <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>덕성여대 사이클</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="setting" style={{flexGrow: 3}} href="crewsetting.html">관리</a>
-        </div>
+        </div> */}
         <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
@@ -250,12 +250,12 @@ function NewComponent4 () {
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="detaillbtn" style={{flexGrow: 3}} href="detailinfo.html">상세정보</a>
           </div>
-        <div className="boxx">
+        {/* <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>강서구 탁구</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <a id="detaillbtn" style={{flexGrow: 3}} href="detailinfo.html">상세정보</a>
-        </div>
+        </div> */}
         <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>

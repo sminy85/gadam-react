@@ -1,19 +1,18 @@
 import React from 'react'
-import '../css/style.css'
+import '../css/base.css'
+import { NavLink, Switch, Route, Router } from 'react-router-dom'
+import FindCrew from './FindCrew'
+import MainPage from './MainPage'
 
-function MainNav () {
-  return (
-    <div className='mainpage'>
-      <div className="main">
-        <div className="main_control">
-          <div className="main_control_btn">
-            <a className="selected" href="/">HOME</a>
-            <a>FIND CREW</a>
-          </div>
-        </div>
-      </div>
+export default () => (
+  <Router>
+    <div class='main_control_btn'>
+      <NavLink className='main_control' exact to='/'>HOME</NavLink>
+      <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
     </div>
-  )
-}
-
-export default MainNav
+    <Switch>
+      <Route exact path='/'><MainPage /></Route>
+      <Route path='/findcrew'><FindCrew /></Route>
+    </Switch>
+  </Router>
+)

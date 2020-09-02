@@ -3,13 +3,9 @@
   /* color */
 --text-color: white; 
 --background-color: gray; 
---accent-color: #7fffd4;
+--accent-color: #97a5a0;
 --point-color: #ffee58; 
 --nav-color:rgba(127, 255, 212, 0.377);
-  
-    /* size */
-  
-    /* fontsize */
 } 
 
 *{
@@ -17,14 +13,13 @@
   margin:0;
   box-sizing: border-box;
 }
+
 html,body{
-    margin:0;
-    height:100%;
-    font-family: 'Source Sans Pro'; 
-    background-color: rgb(245, 244, 244);
+  margin:0;
+  height:100%;
+  font-family: 'Source Sans Pro'; 
+  background-color: rgb(245, 244, 244);
 }
-
-
 
 a{
   text-decoration: none;
@@ -72,19 +67,16 @@ list-style:none;
 .navbar_mypage a{
     color: var(--text-color);
   }
+
 .navbar_mypage li{
-    padding: 8px 12px;
+  padding: 8px 12px;
   border: 2px solid gray;
-    
 }
 
 .navbar_mypage li:hover{
   border: 2px solid var(--accent-color);
-    border-radius: 4px;
+  border-radius: 4px;
 }
-
-
-
 
 .crewicon{
   background:white;
@@ -96,20 +88,26 @@ list-style:none;
 }
 
 
+.main_control2 {
+  color: black;
+  size: 30px;
+  margin-right:20px;
+  padding: 8px 12px;
+  background-color: var(--nav-color);
+}
+
 .fa-running,.fa-futbol,.fa-hiking,.fa-biking,.fa-table-tennis,.fa-basketball-ball,.fa-bowling-ball,.fa-plus, .fa-golf-ball{
   display:flex;
   justify-content:center;
   align-items:center;
-  width:200%;;
+  width:200%;
   height:100px;
-  /* border:3px solid var(--nav-color); */
   color:rgb(56, 56, 56);
   border-radius:10px;
   font-size:70px;
   margin:30px;
   margin-bottom:7px;
   padding-top: 14px;
-
 }
 
 .sportsname{
@@ -130,15 +128,12 @@ list-style:none;
   padding:15px;
 }
 
-  
-
-
 .center_body3 {
   background-color:white;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 8px;
   width: 60%;
   height: 900px;
   border: 5px solid var(--nav-color);
