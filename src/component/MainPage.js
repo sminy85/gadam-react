@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
 
 import Modal from './Modal'
-import { NavLink, Switch, Route, useParams } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 function MainPage () {

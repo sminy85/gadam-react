@@ -2,8 +2,6 @@ import React from 'react'
 import '../css/detailinfo.css'
 
 
-
-
 function DetailInfo () {
   return (
     <div class="detailinfo">
