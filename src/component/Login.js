@@ -1,14 +1,13 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import '../css/login.css'
 import '../css/base.css'
-
+import { NavLink } from 'react-router-dom'
 
 function Login () {
   return (
     <div className='login_body'>
       <NewComponent3 />
-     
+      <hr />
     </div>
   )
 }
@@ -19,11 +18,11 @@ function NewComponent3 () {
       <b><p className="logintitle">Login</p></b>
       <form name="fo" className="loginfo" method="get">
         <div className="loginfo_id">
-          <label><p id="un">Username</p><br /><input type="text" size={15} /></label>
+          <label><p id="un">Username</p><br /><input type="text" size={15} defaultValue="id"/></label>
         </div>
         <div className="loginfo_pw">
           <label htmlFor="pass"><p id="pw" >Password</p></label><br />
-          <input id="pass" type="password" size={15}  />
+          <input id="pass" type="password" size={15} defaultValue />
         </div>
         <div className="login_btn">
           <input type="submit" Value="LOG IN" />
@@ -38,7 +37,7 @@ function NewComponent3 () {
         <br />
         <div className="gojoin">
           <p id="notyet">아직 가담가담 회원이 아니신가요?</p>
-          <li><NavLink id="go_to_join" to='/join'>회원가입 바로가기</NavLink></li>
+          <li><NavLink id='go_to_join' to='/join'>회원가입 바로가기</NavLink></li>
         </div>
       </form>
       <hr />

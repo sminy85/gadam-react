@@ -1,17 +1,29 @@
 import React, { useState } from 'react'
 import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
-
+import '../css/base.css'
 import Modal from './Modal'
+// {/*import { NavLink, Switch, Route, useParams } from 'react-router-dom'*/}
 import { NavLink } from 'react-router-dom'
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
+import slideImage1 from './images/blog-1.jpg'
+import slideImage2 from './images/blog-2.jpg'
+import slideImage3 from './images/blog-3.jpg'
 
+var slideImages = [
+  './images/blog-1.jpg',
+  './images/blog-2.jpg',
+  './images/blog-3.jpg'
+]
 
 function MainPage () {
   return (
     <div class='mainpage'>
       <div class='main_control_btn'>
-        <NavLink className='main_control1'  exact to='/'>HOME</NavLink>
-        <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>-</div>
+        <NavLink className='main_control1' exact to='/'>HOME</NavLink>
+        <NavLink className='main_control' to='/findcrew'>FIND CREW</NavLink>
+      </div>
       <div class='main'>
         <div class='center_body2'>
           <NewComponent />
@@ -31,28 +43,34 @@ function NewComponent () {
   return (
     <div>
       <div>
-        {/*hotcrew_image
-        <section className='slider'>
-          <div className='flexslider'>
-            <ul className='slides'>
-              <li>
-                <a href='/'>
-                  <img src='images/blog-1.jpg' width='10%' height='10%' />
-                </a>
-              </li>
-              <li>
-                <img src='images/blog-4.jpg' />
-              </li>
-              <li>
-                <img src='images/blog-6.jpg' />
-              </li>
-            </ul>
+        <div className="slide-container">
+          <div class="todays-hot">
+            <b><p>HOT CREW</p></b>
+         
           </div>
-        </section>
-        {/*todays_crew*/}
+          <Slide easing='ease'>
+            <div className="each-slide">
+              <img className='slide_img' src={slideImage1} />
+              {/*<div style={{ backgroundImage: slideImages[0] }}>
+                <span>Slide 1</span>
+              </div>*/}
+            </div>
+            <div className="each-slide">
+              <img className='slide_img' src={slideImage2} />
+            </div>
+            <div className="each-slide">
+              <img className='slide_img' src={slideImage3} />
+              {/*<div style={{ backgroundImage: 'url(' + slideImages[0] + ')' }}>
+                <span>Slide 3</span>
+              </div>*/}
+            </div>
+          </Slide>
+        </div>
+
         <div className="todays-crew">
           <div className="todays-crew-nav">
-            <span>오늘의 크루</span>
+            {/* <span>오늘의 크루</span> */}
+            <b><span>TODAY'S CREW</span></b>
             <span className="filter_btn" id="filter_btn">
               <button
                 class='toggle-button'
@@ -61,7 +79,7 @@ function NewComponent () {
                   e.preventDefault()
                   setShow(!show)
                 }}>
-                <FontAwesome name='filter' size='2x' />
+                <FontAwesome name='filter' size='3x' />
               </button>
             </span>
           </div>
@@ -115,10 +133,10 @@ function NewComponent () {
                 </div>
               </div>
             </div>
-          </Modal>
-
-          <hr />
-
+          </Modal>       
+          
+          {/* <hr /> */}
+        
           <div className="time-filter">
             <ul className="time-filter-btn">
               <li><a href='/'>전체</a></li>
@@ -140,7 +158,7 @@ function NewComponent () {
               <li><a href='/'>22:00</a></li>
             </ul>
           </div>
-          <hr />
+          {/* <hr /> */}
           <div className="region-filter">
             <ul className="region-filter-btn">
               <li>
@@ -174,7 +192,7 @@ function NewComponent () {
                 <a href='/'>부산</a>
               </li>
             </ul>
-            <hr />
+            {/* <hr /> */}
             <ul>
               <div className="todays-crew-info">
                 <li className="time"> 9:00 </li>
@@ -186,7 +204,7 @@ function NewComponent () {
                     <li>#서울</li>
                   </span>
                 </div>
-               <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
+                <a href='/' className="joinbtn">참여하기</a>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 11:00 </li>
@@ -198,7 +216,7 @@ function NewComponent () {
                     <li>#서울</li>
                   </span>
                 </div>
-                <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
+                <a className="joinbtn" href='/'>참여하기</a> 
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 15:00 </li>
@@ -210,7 +228,7 @@ function NewComponent () {
                     <li>#서울</li>
                   </span>
                 </div>
-                <NavLink className='joindonebtn' to='/detailinfo'>모집마감</NavLink>
+                <a className="joindonebtn" href='/'>모집마감</a>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 17:00 </li>
@@ -222,8 +240,7 @@ function NewComponent () {
                     <li>#대전</li>
                   </span>
                 </div>
-                {/* <a className="joinfastbtn" href='/'>마감임박</a> */}
-               <NavLink className='joinfastbtn' to='/detailinfo'>마감임박</NavLink>
+                <a className="joinfastbtn" href='/'>마감임박</a>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 18:00 </li>
@@ -235,7 +252,7 @@ function NewComponent () {
                     <li>#대전</li>
                   </span>
                 </div>
-                <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
+                <a className="joinbtn" href='/'>참여하기</a>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 19:00 </li>
@@ -247,7 +264,7 @@ function NewComponent () {
                     <li>#부산</li>
                   </span>
                 </div>
-                <NavLink className='joinbtn' to='/detailinfo'>참여하기</NavLink>
+                <a className="joinbtn" href='/'>참여하기</a>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 20:00 </li>
@@ -259,7 +276,7 @@ function NewComponent () {
                     <li>#부천</li>
                   </span>
                 </div>
-               <NavLink className='joindonebtn' to='/detailinfo'>모집마감</NavLink>
+                <a className="joindonebtn" href='/'>모집마감</a>
               </div>
               <div className="todays-crew-info">
                 <li className="time"> 22:00 </li>
@@ -271,7 +288,7 @@ function NewComponent () {
                     <li>#인천</li>
                   </span>
                 </div>
-                <NavLink className='joinfastbtn' to='/detailinfo'>마감임박</NavLink>
+                <a className="joinfastbtn" href='/'>마감임박</a>
               </div>
             </ul>
           </div>

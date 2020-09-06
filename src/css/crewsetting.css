@@ -1,0 +1,64 @@
+.reset_crew {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid white;
+    margin-top:20px;
+}
+
+.title-s {
+    font-size:25px;
+    padding-top:25px;
+    padding-bottom:20px;
+}
+
+.setting_form {
+    margin: 0;
+    width: 100%;
+}
+
+.settingcrew {
+display: flex;
+margin: auto;
+padding: 10px;
+}
+
+#fixdone {
+padding: 5px;
+background: none;
+font-size: 15px;
+border-radius: 5px;
+background-color:aliceblue;
+border:2px solid darkgray;
+}
+
+#fixdone :hover{
+border:2px solid darkgray;
+}
+table {
+	border-collapse: collapse;
+}
+td, th {
+	text-align : left;
+	padding: 10px;
+	height: 20px;
+	width: 200px;
+}
+
+#crewplace, #crewid {
+	border : 2px solid skyblue;
+	border-radius : 5px;
+}
+
+.crewsetting_input:hover {
+	background : aliceblue;
+	border : 2px solid skyblue;
+	border-radius : 5px;
+}
+
+a {
+  color: black;
+  font-style: none;
+}
