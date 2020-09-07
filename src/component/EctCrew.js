@@ -33,24 +33,24 @@ function EctCrew () {
                 <tr>
                   <td>
                    <NavLink to='/crewlist' className="sportsname-ect" >골프</NavLink></td>
-                      {/*<a href="#"><p className="sportsname-ect">골프</p></a></td> */}
-                  <td><a href="#">
+                      {/*<a><p className="sportsname-ect">골프</p></a></td> */}
+                  <td><a>
                       <p className="sportsname-ect">농구</p></a></td>  
-                  <td><a href="crewlist.html">
+                  <td><a>
                       <p className="sportsname-ect">등산</p></a></td>    
                 </tr>
                 <tr>
-                  <td><a href="#">
+                  <td><a>
                       <p className="sportsname-ect">러닝</p></a></td>
-                  <td><a href="#">
+                  <td><a>
                       <p className="sportsname-ect">사이클</p></a></td>
-                  <td><a href="#">
+                  <td><a>
                       <p className="sportsname-ect">축구</p></a></td>
                 </tr>
                 <tr>
-                  <td><a href="#">
+                  <td><a>
                       <p className="sportsname-ect">클라이밍</p></a></td>
-                  <td><a href="#">
+                  <td><a>
                       <p className="sportsname-ect">테니스</p></a></td>
                 </tr>
               </tbody>

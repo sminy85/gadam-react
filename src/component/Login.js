@@ -7,7 +7,7 @@ function Login () {
   return (
     <div className='login_body'>
       <NewComponent3 />
-      <hr />
+    
     </div>
   )
 }
@@ -35,7 +35,7 @@ function NewComponent3 () {
           <li><NavLink to='/findidpw'>아이디/비밀번호 찾기</NavLink></li>
         </div>
         <br />
-        <div className="gojoin">
+        <div className="gojoin-gadam">
           <p id="notyet">아직 가담가담 회원이 아니신가요?</p>
           <li><NavLink id='go_to_join' to='/join'>회원가입 바로가기</NavLink></li>
         </div>
@@ -43,7 +43,8 @@ function NewComponent3 () {
       <hr />
       <h1 className="loginsubtitle">SNS LOG IN</h1>
       <div className="snslogin_btn">
-        <a id="custom-login-btn" href="javascript:loginWithKakao()">
+        {/* <a id="custom-login-btn" href="javascript:loginWithKakao()"> */}
+        <a id="custom-login-btn">
           <img width={222} src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" />
         </a>
         <p id="token-result" />

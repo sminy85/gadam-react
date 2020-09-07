@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/addsports.css'
 import '../css/base.css'
-import { NavLink } from 'react-router-dom'
 
 function AddSports () {
   return (

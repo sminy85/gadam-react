@@ -2,9 +2,18 @@
  
  margin-top:20px;
 }
-.center_body{
+
+.center_body_fip {
+  background-color:white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
   margin-top:20px;
-  height:590px;
+  height:800px;
+  padding-top:30px;
+  margin-bottom:10px;
+  
 }
 .title{
   padding-right: 25%;

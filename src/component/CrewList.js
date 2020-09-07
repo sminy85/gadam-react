@@ -1,7 +1,6 @@
 import React from 'react'
 import '../css/crewlist.css'
 import '../css/base.css'
-import { NavLink } from 'react-router-dom'
 
 function CrewList() {
   return (
@@ -18,23 +17,23 @@ function CrewList() {
       {/* <hr /> */}
       <div className="time-filter">
         <ul className="time-filter-btn">
-          <li><a href="#">전체</a></li>
-          <li><a href="#">7:00</a></li>
-          <li><a href="#">8:00</a></li>
-          <li><a href="#">9:00</a></li>
-          <li><a href="#">10:00</a></li>
-          <li><a href="#">11:00</a></li>
-          <li><a href="#">12:00</a></li>
-          <li><a href="#">13:00</a></li>
-          <li><a href="#">14:00</a></li>
-          <li><a href="#">15:00</a></li>
-          <li><a href="#">16:00</a></li>
-          <li><a href="#">17:00</a></li>
-          <li><a href="#">18:00</a></li>
-          <li><a href="#">19:00</a></li>
-          <li><a href="#">20:00</a></li>
-          <li><a href="#">21:00</a></li>
-          <li><a href="#">22:00</a></li>
+          <li><a>전체</a></li>
+          <li><a>7:00</a></li>
+          <li><a>8:00</a></li>
+          <li><a>9:00</a></li>
+          <li><a>10:00</a></li>
+          <li><a>11:00</a></li>
+          <li><a>12:00</a></li>
+          <li><a>13:00</a></li>
+          <li><a>14:00</a></li>
+          <li><a>15:00</a></li>
+          <li><a>16:00</a></li>
+          <li><a>17:00</a></li>
+          <li><a>18:00</a></li>
+          <li><a>19:00</a></li>
+          <li><a>20:00</a></li>
+          <li><a>21:00</a></li>
+          <li><a>22:00</a></li>
         </ul>
       </div>
       {/* <hr /> */}

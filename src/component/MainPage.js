@@ -3,7 +3,6 @@ import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
 import '../css/base.css'
 import Modal from './Modal'
-// {/*import { NavLink, Switch, Route, useParams } from 'react-router-dom'*/}
 import { NavLink } from 'react-router-dom'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
@@ -50,16 +49,17 @@ function NewComponent () {
           </div>
           <Slide easing='ease'>
             <div className="each-slide">
-              <img className='slide_img' src={slideImage1} />
+            <NavLink  to='/detailinfo'><img className='slide_img' src={slideImage1} /></NavLink>
+           
               {/*<div style={{ backgroundImage: slideImages[0] }}>
                 <span>Slide 1</span>
               </div>*/}
             </div>
             <div className="each-slide">
-              <img className='slide_img' src={slideImage2} />
+            <NavLink  to='/detailinfo'><img className='slide_img' src={slideImage2} /></NavLink>
             </div>
             <div className="each-slide">
-              <img className='slide_img' src={slideImage3} />
+            <NavLink  to='/detailinfo'><img className='slide_img' src={slideImage3} /></NavLink>
               {/*<div style={{ backgroundImage: 'url(' + slideImages[0] + ')' }}>
                 <span>Slide 3</span>
               </div>*/}
@@ -86,7 +86,7 @@ function NewComponent () {
 
           <Modal onClose={showModal} show={show}>
             <div className="modal"> 
-              <div className="content"> 
+              <div className="content99"> 
                 카테고리
                 <span className="close-button">×</span>
                 <div className="filter_item">

@@ -6,11 +6,11 @@ import slideImage4 from './images/blog-4.jpg'
 import slideImage5 from './images/blog-5.jpg'
 import slideImage6 from './images/blog-6.jpg'
 
-var slideImages = [
-  './images/blog-4.jpg',
-  './images/blog-5.jpg',
-  './images/blog-6.jpg'
-]
+// var slideImages = [
+//   './images/blog-4.jpg',
+//   './images/blog-5.jpg',
+//   './images/blog-6.jpg'
+// ]
 
 function DetailInfo () {
   return (
