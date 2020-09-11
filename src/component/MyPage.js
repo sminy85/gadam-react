@@ -42,7 +42,7 @@ function NewComponent4 () {
       </div>
       <div className="preview">
         <h3 className="subtitle">나의 운동 일정</h3>
-        <div className="box-slide">
+        <ul className="box-slide">
           <div className="boxx">
             <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
@@ -78,7 +78,7 @@ function NewComponent4 () {
               </button>
             </a>
           </div>
-        </div>
+        </ul>
         <Modal onClose={showModal} show={show}>
           <div className="modal"> 
             <div className="content">
@@ -95,32 +95,6 @@ function NewComponent4 () {
             </div>
           </div>
         </Modal>
-        <div>
-          <a id="show" onclick="if(hide.style.display=='none') 
-{hide.style.display='';show.innerText='▲접기'} else {hide.style.display='none';show.innerText='▶더보기'}" href='#none'>▶더보기</a>
-          <div id="hide" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <a id="deletebtn" style={{flexGrow: 3}} onclick="confirmCancle()" href='/'>일정 취소</a>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <a id="deletebtn" style={{flexGrow: 3}} onclick="confirmCancle()" href='/'>일정 취소</a>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>안양천 러닝</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <a id="deletebtn" style={{flexGrow: 3}} onclick="confirmCancle()" href='/'>일정 취소</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <hr />
@@ -150,38 +124,6 @@ function NewComponent4 () {
             <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
             <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
             <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-          </div>
-        </div>
-        <div>
-          <a id="show2" onclick="if(hide2.style.display=='none') 
-{hide2.style.display='';show2.innerText='▲접기'} else {hide2.style.display='none';show2.innerText='▶더보기'}" href='#none'>▶더보기</a>
-          <div id="hide2" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>강남 무빙센터 클라이밍</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>미아사거리역 볼링</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>관악산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/writereview' id='reviewbtn'>후기 작성하기</NavLink></li>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -214,26 +156,7 @@ function NewComponent4 () {
             <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
           </div>
         </div>
-        <div>
-          <a id="show3" onclick="if(hide3.style.display=='none') 
-{hide3.style.display='';show3.innerText='▲접기'} else {hide3.style.display='none';show3.innerText='▶더보기'}" href="#none">▶더보기</a>
-          <div id="hide3" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>양천공원 농구</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
-              </div>
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>북한산 둘레길 걷기</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/crewsetting' id='setting'>관리</NavLink></li>
-              </div>
-            </div>
-          </div>
-        </div>
+    
       </div>
       <hr />
       <div className="preview">
@@ -264,53 +187,7 @@ function NewComponent4 () {
             <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
           </div>
         </div>
-        <div>
-          <a id="show4" onclick="if(hide4.style.display=='none') 
-{hide4.style.display='';show4.innerText='▲접기'} else {hide4.style.display='none';show4.innerText='▶더보기'}" href="#none">▶더보기</a>
-          <div id="hide4" style={{display: 'none'}}>
-            <div className="box-slide">
-              <div className="boxx">
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산 </h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>한강 러닝</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>강서구 탁구</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-            </div>
-            <br />
-            <div className="box-slide">
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>강서구 탁구</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-              <div className='boxx'>
-                <h3 id="crewtitle" style={{flexGrow: 3}}>도봉구 도봉산 등산</h3>
-                <p id="date-time" style={{flexGrow: 2}}>2020년 8월 7일 18:00</p>
-                <p id="place" style={{flexGrow: 2}}>도봉산 입구 매점</p>
-                <li><NavLink to='/detailinfo' id='detaillbtn'>상세정보</NavLink></li>
-              </div>
-            </div>
-          </div>
-        </div>
+     
       </div>
     </div>
   )

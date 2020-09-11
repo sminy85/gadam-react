@@ -18,10 +18,6 @@ border-radius:15px;
    
 }
 
-.center_body {
-  height:800px;
-  
-}
 
 .bottomarea {
  
@@ -29,6 +25,6 @@ border-radius:15px;
 }
 .center_body{
   margin-top:20px;
-  height:590px;
+  height:800px;
    padding-left:200px;
 }

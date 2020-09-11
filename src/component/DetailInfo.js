@@ -6,30 +6,22 @@ import slideImage4 from './images/blog-4.jpg'
 import slideImage5 from './images/blog-5.jpg'
 import slideImage6 from './images/blog-6.jpg'
 
-// var slideImages = [
-//   './images/blog-4.jpg',
-//   './images/blog-5.jpg',
-//   './images/blog-6.jpg'
-// ]
-
 function DetailInfo () {
   return (
-   
     <div class="detailinfo">
-<div className="slide_crewimg">
-<Slide easing='ease'>
-            <div className="each-slide">
-              <img className='slide_img' src={slideImage4} />
-            </div>
-            <div className="each-slide">
-              <img className='slide_img' src={slideImage5} />
-            </div>
-            <div className="each-slide">
-              <img className='slide_img' src={slideImage6} />
-            </div>
-          </Slide>
-        </div>
-
+      <div className="slide_crewimg">
+        <Slide easing='ease'>
+          <div className="each-slide">
+            <img className='slide_img' src={slideImage4} />
+          </div>
+          <div className="each-slide">
+            <img className='slide_img' src={slideImage5} />
+          </div>
+          <div className="each-slide">
+            <img className='slide_img' src={slideImage6} />
+          </div>
+        </Slide>
+          </div>
           <div className="crew_info">
             <div className="crew-box">
             <div className="crew_title">
@@ -124,4 +116,5 @@ else {hide.style.display='none';show.innerText='▶전체보기'}" href="#none">
         </div>
   )
 }
+
 export default DetailInfo

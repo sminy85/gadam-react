@@ -224,8 +224,8 @@ border-radius: 25px;
   background-clip:padding-box;
   border:4px solid transparent; 
 }
+
 .time-filter{
- 
   width:100%;
   margin:0 auto;
 }
@@ -240,26 +240,17 @@ border-radius: 25px;
   border-bottom:1px solid gray ;
 }
 
-.region-filter-btn li{
-  list-style: none;
-  padding-right: 10px;
-  font-size: 18px;
-}
-
 .region-filter-btn a{
-  background-color: white(128, 128, 128, 0.596);
+  background-color: white;
   color: black;
-  padding: 3px 8px;
-   border-radius: 25px;
-    border:3px solid rgba(128, 128, 128, 0.596);
+  border-radius: 25px;
+  border:3px solid rgba(128, 128, 128, 0.596);
 }
 
 .region-filter-btn a:hover{
-  list-style: none;
   color: black;
-  /* background-color:  #ffff8b; */
-  border:3px solid var(--nav-color);
   border-radius: 25px;
+  border:3px solid var(--nav-color);
 }
 
 .todays-crew{
@@ -315,7 +306,7 @@ border-radius: 25px;
    border:none ;
   background-color:skyblue;
   color:white;
-  padding:4px;
+  padding:2px;
  border-radius:80px;
   border:2px solid white;
   display:flex;
@@ -323,7 +314,7 @@ border-radius: 25px;
   align-items:center;
 }
 .joinbtn:hover{
-border:2px solid black;
+border:2px solid skyblue;
 }
 
 .joindonebtn{
@@ -338,7 +329,7 @@ display:flex;
   border:2px solid white;
 }
 .joindonebtn:hover{
-border:2px solid black;
+border:2px solid rgba(54, 53, 53, 0.623);
 }
 
 .joinfastbtn{
@@ -347,14 +338,16 @@ border:2px solid black;
   background-color:red;
   color:white;
   padding:2px;
+  margin:3px;
  border-radius:80px;
      border:2px solid white;
   display:flex;
   justify-content:center;
   align-items:center;
+  margin-bottom:5px;
 }
 .joinfastbtn:hover{
-border:2px solid black;
+  border:2px solid red;
 }
 
 .main-paging{
@@ -459,81 +452,14 @@ input {
 input:focus{ 
   border: 1px solid #97d6eb; 
 } 
-     
+.sex_filter,.age_filter {
+  margin-right:20px;
+  
+}
 .bottom_btn {
   margin: auto;
   padding: 10px;
 }
-#submit{ 
-         width: 127px; 
-         height: 48px; 
-         text-align: center; 
-         border: none; 
-         margin-top: 20px; 
-         cursor: pointer; 
-     } 
-     #submit:hover{ 
-         color: #fff; 
-         background-color: #216282; 
-         opacity: 0.9; 
-     } 
-     #cancel { 
-         width: 127px; height: 48px; 
-         text-align: center; 
-         border: none; 
-         margin-top: 20px; 
-         cursor: pointer; 
-     } 
-     #cancel:hover{ 
-         color: #fff; 
-         background-color: #216282; 
-         opacity: 0.9; 
-     }
-
-    .modal { 
-         position: fixed; 
-         left: 0; 
-         top: 0; 
-         width: 100%; 
-         height: 100%; 
-         background-color: rgba(0, 0, 0, 0.5); 
-         opacity: 0; 
-         visibility: hidden; 
-         transform: scale(1.1); 
-         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
-     } 
-     .modal-content { 
-         position: absolute; 
-         top: 50%; 
-         left: 50%; 
-         transform: translate(-50%, -50%); 
-         background-color: white; 
-         padding: 1rem 1.5rem; 
-         width: 500px; 
-         height: 350px; 
-         border-radius: 0.5rem; 
-     } 
-     .close-button { 
-         float: right; 
-         width: 1.5rem; 
-         line-height: 1.5rem; 
-         text-align: center; 
-         cursor: pointer; 
-         border-radius: 0.25rem; 
-         background-color: lightgray;
-     } 
-     .close-button:hover { 
-         background-color: darkgray; 
-     } 
-     .show-modal { 
-         opacity: 1; 
-         visibility: visible; 
-         transform: scale(1.0); 
-         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
-     }      
-
-
-
      
 p {
   margin: 0;
@@ -577,7 +503,6 @@ border:none;
   display: inline-block;
   margin: auto;
   width: 100%;
-  overflow: scroll;
 }
 
 .list {
@@ -612,6 +537,7 @@ border:none;
   padding: 5px 10px;
   color: #999999;
   background-color: black;
+  margin-bottom:25px;
 }
 
 .bottomarea {
@@ -624,4 +550,3 @@ border:none;
   padding-left: 90%;
   width: 100%;
 }
-
