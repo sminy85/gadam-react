@@ -7,15 +7,14 @@ function CrewList () {
   return (
     <div className='crewlist_body'>
       <section className='crewlist2'>
-        <p className='findcrew-title'><b id='hiking-t'>등산</b>크루를 찾고 계신가요?</p>
+        <p className='findcrew-title'><b id='hiking-t'>등산 </b>크루를 찾고 계신가요?</p>
         <div className='findcrew-q'>
-          <input type='text' palceholder='크루 검색' />
-          <button className='findcrew_btn'>검색</button>
+          <input type='text' />
+          <button className='findcrew_btn'>찾기</button>
         </div>
         <div className='date_q'><p className='date-q'>날짜</p>
           <p className='datepick-q'><input type='date' /></p>
         </div>
-        {/* <hr /> */}
         <div className='time-filter'>
           <ul className='time-filter-btn'>
             <li><a href='/'>전체</a></li>

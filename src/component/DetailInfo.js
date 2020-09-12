@@ -34,8 +34,8 @@ function DetailInfo () {
                 <label className="checkLabel" htmlFor="pick_u">찜하기</label>
               </div>
               <div className="joinyes">
-                <form action="participate.html">
-                  <input id="joiny" type="submit" defaultValue="참여하기" /></form></div>
+                
+                  <input id="joiny" type="submit" defaultValue="참여하기" /></div>
             </div></div>
             <br />
             <div className="date-detail">
@@ -83,20 +83,23 @@ function DetailInfo () {
             </div>
             <br />
         
-            <h3 className="detail">리뷰(N)
-              <select name="review_classifi">
+            <h3 className="detail">리뷰
+              <select className="review_classifi">
                 <option value={1} selected>전체보기</option>
                 <option value={2}>최신순</option>
                 <option value={3}>평점순</option>
               </select>
             </h3>
             <h5 className="content"> {/*여기는 나중에 db에서 정보 받아와서 띄워야하는거니까 대충 코드 써놓을게*/}
-              <div className="review-box" ><div className="id">gadami@naver.com</div>
+              <div className="review-box" >
+                <div className="id">gadami@naver.com</div>
                 <div className="review">짱이에요 오예</div>
-                <div>
-                  <div className="review-box"><div className="id">gadamon@daum.com</div>
+                </div>
+                  <div className="review-box">
+                    <div className="id">gadamon@daum.com</div>
                     <div className="review">별로에요 우우</div>
-                    <div>
+                    </div>
+                    {/* <div>
                       <div>
                         <a id="show" onclick="if(hide.style.display=='none')
 {hide.style.display='';show.innerText='▲접기'}
@@ -110,7 +113,8 @@ else {hide.style.display='none';show.innerText='▶전체보기'}" href="#none">
                                 <div>  <br />
                                 </div>
                               </div>
-                            </div></div></div></div></div></div></div></div></h5>
+                            </div></div></div></div></div> */}
+                            </h5>
             <br />
           </div>
         </div>

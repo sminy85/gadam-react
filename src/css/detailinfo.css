@@ -43,15 +43,11 @@ span {
 
 .crew_title {
   display: flex;
+  padding-left:80px;
   justify-content: space-between;
   align-items: center;
 }
-.choose{
-  display:flex;
-  margin-bottom: 15px;
-   margin-top: 10px;
-  margin-left:550px;
-}
+
 .crew-box{
   border-bottom:2px solid gray ;
 }
@@ -74,14 +70,24 @@ span {
 .crewking-detail{
   border-bottom:2px solid gray ;
   padding-bottom:20px;
+  
 }
+.choose{
+  display:flex;
+  align-items: right;
+  margin-bottom: 15px;
+   margin-top: 10px;
+   padding-left:80px;
+}
+/*
+
 #joiny{
    border: 3px solid var(--nav-color);
   border-radius:20px;
   padding:5px;
   font-size:15px;
 }
-div.radio-wrap {
+ div.radio-wrap {
   display: inline-flex;
   align-items: center;
    border: 3px solid var(--nav-color);
@@ -104,17 +110,17 @@ input[type='radio']:checked {
 
 .like > input {
   display: none;
-}
+} */
 .detail{
   display: flex; 
   align-items: left;
-  padding-left:100px;
+  padding-left:80px;
   font-size:23px;
+  white-space: nowrap;
 }
 .content {
-  display: flex; 
-  align-items: left;
-  padding-left:200px;
+ 
+  padding-left:80px;
   font-size:18px;
 }
 .content2 {
@@ -123,13 +129,14 @@ input[type='radio']:checked {
   font-size:18px;
   border:2px solid var(--nav-color);
   margin-left:50px;
-  width:100%;
+  width:80%;
   padding:15px;
   box-shadow: 5px 5px 10px #47cba3;
 }
 .crew_captin {
   display: flex; 
   padding: 10px;
+  padding-left:80px;
 }
 
 .contact_btn {
@@ -161,19 +168,27 @@ input[type='radio']:checked {
 .id{
   margin-bottom:10px;
   font-size:15px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .review{
-  margin-bottom:10px;
   font-size:13px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .review-box{
   margin-top:10px;
-  background-color:lightgray;
-  
+  background-color:rgb(214, 241, 233);
+  padding:10px;
+  width:80%;
 }
-
+.review_classifi{
+  margin-left:10px;
+  width:120px;
+  margin-bottom: 15px;
+}
 #show,#hide{
   font-size:13px;
   color:black;

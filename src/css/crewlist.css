@@ -90,11 +90,15 @@
   }
   
   .findcrew-title{
-  padding-top:50px;
-    font-size:25px;
-    padding-bottom:20px;
-  display: flex;
-  align-items: left;
+  padding-top:70px;
+    font-size:30px;
+    padding-bottom:10px;
+    margin-right:60%;
+    white-space: nowrap;
+    margin-left:0px;
+    padding-left: 0px;
+    border-bottom: 4px solid skyblue;
+    margin-bottom: 60px;
   }
   .findcrew-q{
   height:40px;
@@ -103,6 +107,7 @@
     background:white;
     margin:30px;
     margin-bottom:40px;
+  margin-left: 10px;
   }
   .findcrew-q input{
     border:none;
@@ -167,7 +172,6 @@
     padding: 3px 8px;
      border-radius: 25px;
    align-items: center;
-   display: flex;
   }
   
   .region-filter-btn a:hover{
