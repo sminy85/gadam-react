@@ -8,9 +8,15 @@
   margin-bottom:10px;
 }
 .title_fip{
-  margin: auto;
+  padding-top:60px;
+  margin-left:50px;
+    text-align: left;
+    margin-bottom: 120px;
+    border-bottom: 3px solid skyblue;
+    width:300px;
+    padding:10px;
   font-size:25px;
-  padding: 50px;
+ 
 }
 
 .findbtn{
@@ -31,6 +37,6 @@ margin-top:40px;
   justify-content:center;
   align-items: center;
    color:black;
-   margin-right:20px;
+   margin-right:50px;
 }
 

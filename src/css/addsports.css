@@ -4,35 +4,35 @@ body {
 
 .want-title{
   text-align: left;
-  margin-left:20%;
-  padding: 30px;
+  margin-left:50px;;
+width:300px;
   font-size:30px;
+  padding-top:100px;
+  margin-bottom:100px;
+  border-bottom: 4px solid #ffee58;
 }
 
-.addsports{
-  display: flex;
-  padding: 20px;
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-}
+
 
 #addsports{
   height:40px;
   font-size:25px;
+  background-color: white;
+  border:4px solid gray;
+  padding:5px;
+  margin-bottom: 70px;
 }
 
 #addsportsbtn{
   height:42px;
   border-radius:25px;
-  border:2px solid gray;
+  border:3px solid gray;
   background-color:white;
-  margin-left:5px;
   width:100px;
+  margin-left:100%;
 }
 #addsportsbtn:hover{
- background-color:gray;
-  color:white;
+ background-color:#ffee58;
 }
 
 a {
