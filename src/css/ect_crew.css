@@ -24,9 +24,10 @@ body{
 
 .go-addsport{
   background:#ffee58;
+  border-color: #ffee58;
   position: absolute;
   left: 70%;
-  top: 700px;
+  top: 77%;
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -40,6 +41,7 @@ body{
 .go-addsport:hover{
   background:#eed91f;
 }
+
 .addsports-top{
   display:flex;
   margin: auto;

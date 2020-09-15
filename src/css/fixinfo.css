@@ -3,12 +3,22 @@
 }
 
 .yes{
-  margin-right:8px;
   padding:0px 5px 0px 5px;
 }
 
 #fixinfo{
-  margin-bottom:20px;
-  font-size:25px;
-  padding:20px;
+  font-size:30px;
+  margin-top:50px;
+  margin-left:50px;
+  text-align: left;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #47cba3;
+  width:210px;
+  padding:5px;
+  white-space:nowrap;
+}
+
+.fixinfo_btn{
+  margin-top:50px;
+  margin-left:80%;
 }

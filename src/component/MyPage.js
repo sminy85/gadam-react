@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/mypage.css'
+import '../css/base.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import the library
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -97,7 +98,6 @@ function NewComponent4 () {
           <li><NavLink to='/checkpw' id='idfix'>회원정보수정</NavLink></li>
         </div>
       </div>
-
       <div className="preview">
         <h3 className="subtitle">나의 운동 일정</h3>
         <ul className="box-slide">
@@ -105,33 +105,41 @@ function NewComponent4 () {
             <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place" >도봉산 입구 매점</li>
-            <li><Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button></li>
+              </Button>
+            </li>
           </div>
           <div className="boxx">
-          <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
+            <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place" >도봉산 입구 매점</li>
-            <li><Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button></li>
+              </Button>
+            </li>
           </div>
           <div className="boxx">
             <h3 id="crewtitle" >안양천 러닝</h3>
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place">도봉산 입구 매점</li>
-            <li><Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button></li>
+              </Button>
+            </li>
           </div>
           <div className="boxx">
             <h3 id="crewtitle" >도봉구 도봉산 등산</h3>
             <li id="date-time">2020년 8월 7일 18:00</li>
             <li id="place">도봉산 입구 매점</li>
-          <li><Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
+            <li>
+              <Button onClick={handleOpen} id='deletebtn' style={{ flexGrow: 3 }}>
               일정 취소
-            </Button></li>
+              </Button>
+            </li>
           </div>
         </ul>
       </div>

@@ -326,11 +326,9 @@ border:2px solid skyblue;
 display:flex;
   justify-content:center;
   align-items:center;
-  border:2px solid white;
+  border:2px solid gray;
 }
-.joindonebtn:hover{
-border:2px solid rgba(54, 53, 53, 0.623);
-}
+
 
 .joinfastbtn{
   font-size:17px;

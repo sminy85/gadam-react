@@ -43,11 +43,17 @@ span {
 
 .crew_title {
   display: flex;
-  padding-left:80px;
+  padding-left: 80px;
   justify-content: space-between;
   align-items: center;
 }
-
+.choose{
+  display:flex;
+  align-items: right;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding-left:80px;
+}
 .crew-box{
   border-bottom:2px solid gray ;
 }
@@ -70,24 +76,15 @@ span {
 .crewking-detail{
   border-bottom:2px solid gray ;
   padding-bottom:20px;
-  
-}
-.choose{
-  display:flex;
-  align-items: right;
-  margin-bottom: 15px;
-   margin-top: 10px;
-   padding-left:80px;
 }
 /*
-
 #joiny{
    border: 3px solid var(--nav-color);
   border-radius:20px;
   padding:5px;
   font-size:15px;
 }
- div.radio-wrap {
+div.radio-wrap {
   display: inline-flex;
   align-items: center;
    border: 3px solid var(--nav-color);
@@ -110,7 +107,8 @@ input[type='radio']:checked {
 
 .like > input {
   display: none;
-} */
+}
+*/
 .detail{
   display: flex; 
   align-items: left;
@@ -119,7 +117,6 @@ input[type='radio']:checked {
   white-space: nowrap;
 }
 .content {
- 
   padding-left:80px;
   font-size:18px;
 }
@@ -136,7 +133,7 @@ input[type='radio']:checked {
 .crew_captin {
   display: flex; 
   padding: 10px;
-  padding-left:80px;
+  padding-left: 80px;
 }
 
 .contact_btn {
@@ -189,6 +186,7 @@ input[type='radio']:checked {
   width:120px;
   margin-bottom: 15px;
 }
+
 #show,#hide{
   font-size:13px;
   color:black;

@@ -6,8 +6,8 @@ function Join () {
   return (
     <div className="join_body">
       <div className="mainn">
-      <h2 className="join">회원가입</h2><br />
-        <form action method="post">       
+        <h2 className="join">회원가입</h2><br />
+        <form action method="post">
           <table>
             <tbody>
               <tr>
@@ -53,10 +53,10 @@ function Join () {
               <tr>
                 <td>전화번호</td>
                 <td><input type="text" size={11} id="num" placeholder="ex ) 01012341234" name="num" /></td>
-              </tr>             
+              </tr>
             </tbody>
           </table>
-          <button id="joinbtn">가입완료</button>  
+          <button id="joinbtn">가입완료</button>
         </form>
       </div>
     </div>
