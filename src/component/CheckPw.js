@@ -1,16 +1,13 @@
 import React from 'react'
 import '../css/checkpw.css'
-import '../css/base.css'
 import { NavLink } from 'react-router-dom'
 
-function CheckPw() {
+function CheckPw () {
   return (
     <div>
       <div className="center_body6">
         <div className='main'>
-          
-            <b><div className="check"> 비밀번호 확인</div></b>
-       
+          <b><div className="check"> 비밀번호 확인</div></b>
           <br />
           <div className="checkpw">
             <input id="pass-c" type="password" size={15} />
@@ -23,4 +20,4 @@ function CheckPw() {
     </div>
   )
 }
-export default CheckPw;
+export default CheckPw

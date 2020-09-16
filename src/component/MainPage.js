@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import FontAwesome from 'react-fontawesome'
 import '../css/style.css'
-import '../css/base.css'
 import Modal from './Modal'
 import { NavLink } from 'react-router-dom'
 import { Slide } from 'react-slideshow-image'

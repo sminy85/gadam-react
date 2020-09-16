@@ -53,6 +53,7 @@ function App () {
           <Route path='/writereview'><WriteReview /></Route>
           <Route path='/crewsetting'><CrewSetting /></Route>
           <Route path='/crewlist'><CrewList /></Route>
+      
         </Switch>
         <Footer />
       </div>
